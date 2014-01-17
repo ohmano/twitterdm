@@ -1,13 +1,11 @@
-twitterdm
-=========
-
 Twitter DirectMessage test implementation.
+=========
 
 I used Cucumber-JVM (with JUnit) to execute the scenarios. (TwitterDMRunner.java)
 
 Also used some parts of the Actors-Actions-Outcomes framework created by meza (https://github.com/meza/AAO)
 
-### Credentials
+### Credentials NEEDED
 
 You will need 2 different Twitter account.
 
@@ -23,7 +21,8 @@ Please follow the instructions below to create credentials for different account
   9. Copy the ConsumerKey, ConsumerSecret, AccessTokenKey, AccessTokenSecret values.
   10. Edit the credentials in "twitterdm.credentials" file.  e.g. JoeConsumerKey=WHvw6KJAc59Gvrg8jt6tQ
 
-### Libraries
+### Stuff
+
 Used libraries (available in repository):
   - cucumber-java-1.1.5.jar
   - cucumber-junit-1.1.5.jar
@@ -31,3 +30,5 @@ Used libraries (available in repository):
   - hamcrest-core-1.3.jar
   - junit-4.11.jar
   - twitter4j-core-3.0.5-sources.jar
+
+Used IDE: Eclipse (you can import as project)
