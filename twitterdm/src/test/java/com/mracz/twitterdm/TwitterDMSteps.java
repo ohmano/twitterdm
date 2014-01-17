@@ -19,6 +19,8 @@ public class TwitterDMSteps {
 	public void are_on_twitter(String actor1Label, String actor2Label){
 		TwitterUser user1 = new TwitterUser(actor1Label);
 		TwitterUser user2 = new TwitterUser(actor2Label);
+		verifyCredentials(user1);
+		verifyCredentials(user2);
 		
 		actorManager.addActor(actor1Label, user1);
 		actorManager.addActor(actor2Label, user2);
@@ -73,5 +75,13 @@ public class TwitterDMSteps {
 		String messageToCheck = ((SendDmAction)targetUser.lastAction()).getMessageText();
 			
 		Assert.assertFalse(performingUser.isMessageRecieved(messageToCheck));
+	}
+	
+	private void verifyCredentials(TwitterUser user) {
+		try {
+			user.getTwitterInstance().verifyCredentials();
+		} catch (TwitterException e) {
+			Assert.assertNull(e);
+		}
 	}
 }
