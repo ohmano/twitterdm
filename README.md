@@ -8,7 +8,9 @@ I have used Cucumber-JVM (with JUnit) to execute the scenarios. (TwitterDMRunner
 
 ### Credentials
 
-Please follow the instructions below to create credentials for different users:
+You will need 2 different Twitter account.
+
+Please follow the instructions below to create credentials for different accounts:
   1. Go to https://dev.twitter.com/apps
   2. Login if needed
   3. Click on "Create a new application" (in case you don't have one)
