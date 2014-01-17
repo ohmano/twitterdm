@@ -1,9 +1,12 @@
 twitterdm
 =========
 
-Twitter DirectMessage test implementations
+Twitter DirectMessage test implementation.
 
-Test are implemented in Java with Twitter API.
+I have used Cucumber-JVM (with JUnit) to execute the scenarios. (TwitterDMRunner.java)
+
+
+### Credentials
 
 Please follow the instructions below to create credentials for different users:
   1. Go to https://dev.twitter.com/apps
@@ -17,8 +20,11 @@ Please follow the instructions below to create credentials for different users:
   9. Copy the ConsumerKey, ConsumerSecret, AccessTokenKey, AccessTokenSecret values.
   10. Edit the credentials in "twitterdm.credentials" file.  e.g. JoeConsumerKey=WHvw6KJAc59Gvrg8jt6tQ
 
-
-Used:
-  - Cucumber 1.1.5
-  - JUnit 4.1.1
-  - Twitter4j 3.0.5
+### Libraries
+Used libraries (available in repository):
+  - cucumber-java-1.1.5.jar
+  - cucumber-junit-1.1.5.jar
+  - cucumber-picocontainer-1.1.5.jar
+  - hamcrest-core-1.3.jar
+  - junit-4.11.jar
+  - twitter4j-core-3.0.5-sources.jar
