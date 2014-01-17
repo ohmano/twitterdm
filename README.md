@@ -15,10 +15,8 @@ Please follow the instructions below to create credentials for different users:
   7. Go back to "Details" tab
   8. Generate Access Token on the bottom of the site.
   9. Copy the ConsumerKey, ConsumerSecret, AccessTokenKey, AccessTokenSecret values.
-  10. Edit the credentials in "twitterd.credentials" file.
-      e.g. JoeConsumerKey=WHvw6KJAc59Gvrg8jt6tQ
-           ...
-           JulieAccessTokenKey=2293559412-rKta4Xzfp3uHi1yrYrtAdeYU9jq4d42pvOHYBHr
+  10. Edit the credentials in "twitterdm.credentials" file.  e.g. JoeConsumerKey=WHvw6KJAc59Gvrg8jt6tQ
+
 
 Used:
   - Cucumber 1.1.5
