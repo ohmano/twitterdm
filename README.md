@@ -5,7 +5,7 @@ Twitter DirectMessage test implementation.
 
 I used Cucumber-JVM (with JUnit) to execute the scenarios. (TwitterDMRunner.java)
 
-Also used some part of the Actors-Actions-Outcomes framework created by meza (https://github.com/meza/AAO)
+Also used some parts of the Actors-Actions-Outcomes framework created by meza (https://github.com/meza/AAO)
 
 ### Credentials
 
