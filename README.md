@@ -30,5 +30,6 @@ Used libraries (available in repository):
   - hamcrest-core-1.3.jar
   - junit-4.11.jar
   - twitter4j-core-3.0.5-sources.jar
+  - aao-RELEASE
 
 Used IDE: Eclipse (you can import as project)
