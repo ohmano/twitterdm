@@ -15,7 +15,7 @@ public class SendDmAction implements Action {
     private TwitterUser targetUser=null;
 
     SendDmAction(TwitterUser performingUser, TwitterUser targetUser) {
-    	messageText = "Hello I'm "+performingUser.getLabel()+"! Check this out :"+ new Random().nextInt(50)+"";
+    	messageText = "Hello I'm "+performingUser.getLabel()+"! Check this out : "+ new Random().nextInt(1000)+"";
     	this.performingUser = performingUser;
     	this.targetUser = targetUser;
         
