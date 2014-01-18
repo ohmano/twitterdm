@@ -24,9 +24,9 @@ Please follow the instructions below to create credentials for different account
 
 ### @After
 
-You can use @After to clean the users after scenarios, but TAKE CARE with real accounts, because it will delete all of your friendship and all of your direct messages.
+You can use @After to clean the Twitter accounts after every scenario, but TAKE CARE with real accounts, because it will delete all of your friendship and all of your direct messages.
 
-I recommend only for TEST users.
+I recommend only for TEST Twitter accounts.
 
 ```
 	@After
