@@ -77,6 +77,14 @@ public class TwitterDMSteps {
 			
 		Assert.assertFalse(performingUser.isMessageRecieved(messageToCheck));
 	}
+
+//	@After
+	public void cleanUsers() throws TwitterException{
+	      for( Actor actor : actorManager){
+	    	  ((TwitterUser)actor).destroyAllFriendship();
+	    	  ((TwitterUser)actor).cleanInbox();
+	      }
+	}
 	
 	private void verifyCredentials(TwitterUser user) {
 		try {
