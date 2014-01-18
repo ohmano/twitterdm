@@ -21,6 +21,23 @@ Please follow the instructions below to create credentials for different account
   9. Copy the ConsumerKey, ConsumerSecret, AccessTokenKey, AccessTokenSecret values.
   10. Edit the credentials in "twitterdm.credentials" file.  e.g. JoeConsumerKey=WHvw6KJAc59Gvrg8jt6tQ
 
+
+### @After
+
+You can use @After to clean the users after scenarios, but TAKE CARE with real accounts, because it will delete all of your friendship and all of your direct messages.
+
+I recommend only for TEST users.
+
+```
+	@After
+	public void cleanUsers(){
+	      for( Actor actor : actorManager){
+	    	  ((TwitterUser)actor).destroyAllFriendship();
+	    	  ((TwitterUser)actor).cleanDirectMessages();
+	      }
+	}
+```
+	
 ### Stuff
 
 Used libraries (available in repository):
