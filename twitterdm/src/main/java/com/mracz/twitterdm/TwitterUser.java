@@ -121,7 +121,7 @@ public class TwitterUser extends Actor{
 		}
 	}
 	
-	public void cleanInbox(){
+	public void cleanDirectMessages(){
 		try {
 			List<DirectMessage> messages = twitterInstance.getDirectMessages();
 			for(DirectMessage message : messages){
