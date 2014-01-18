@@ -107,6 +107,31 @@ public class TwitterUser extends Actor{
 		}
 	}
 	
+	public void destroyAllFriendship(){
+  	  	long lCursor = -1;
+		long[] friendsIDs = null;
+		try {
+			friendsIDs = (twitterInstance.getFriendsIDs( lCursor)).getIDs();
+			for (long i : friendsIDs)
+			{
+				destroyFriendship(i);
+			}
+		} catch (TwitterException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void cleanInbox(){
+		try {
+			List<DirectMessage> messages = twitterInstance.getDirectMessages();
+			for(DirectMessage message : messages){
+				twitterInstance.destroyDirectMessage(message.getId());
+			}
+		} catch (TwitterException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public Boolean isMessageRecieved(String messageText){
 		Boolean recieved = false;
 		
