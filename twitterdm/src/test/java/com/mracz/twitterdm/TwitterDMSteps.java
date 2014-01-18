@@ -81,7 +81,7 @@ public class TwitterDMSteps {
 	}
 
 //	@After
-	public void cleanUsers() throws TwitterException{
+	public void cleanUsers(){
 	      for( Actor actor : actorManager){
 	    	  ((TwitterUser)actor).destroyAllFriendship();
 	    	  ((TwitterUser)actor).cleanDirectMessages();
