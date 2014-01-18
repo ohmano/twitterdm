@@ -3,10 +3,12 @@ package com.mracz.twitterdm;
 import org.junit.Assert;
 
 import twitter4j.TwitterException;
+import hu.meza.aao.Actor;
 import hu.meza.aao.ActorManager;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.After;
 
 public class TwitterDMSteps {
 	
